@@ -1,5 +1,6 @@
 import CoreLocation
 import MapKit
+import XCPlayground
 
 /*:
 # Get current location
@@ -45,3 +46,5 @@ let mapView = MKMapView(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
 
 // show New York in map view
 mapView.region = MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2D(latitude: 40.7141667, longitude: -74.0063889), 5000, 5000)
+
+XCPShowView("Map View", view: mapView)
